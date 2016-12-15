@@ -1,0 +1,87 @@
+@charset "utf-8";
+/* CSS Document */
+/* reset */
+body,h1,h2,h3,h4,h5,h6,p,ul,ol,li,input,dl,dd,dt,form{margin:0;padding:0;}
+body{font-family:arial,'Microsoft YaHei';color:#666;}
+ul{list-style:none;}
+img{border:none;}
+a{text-decoration:none;}
+.clear{clear:both;}
+i{font-style:normal;font-family:consolas;}
+.clearfix:after{
+	content:'200B';
+	display:block;
+	height:0;
+	font-size:0;
+	clear:both;
+}
+/*为了出发低版本ie浏览器*/
+.clearfix{*zoom:1;}
+/*body*/
+body{background:url(../images/bg.jpg);height:100%}
+/*header*/
+.header{background:rgba(0,0,0,0.15);height:83px;color:#fff}
+.header a{color:#fff}
+.header_inner{margin:0 auto;width:960px;height:83px;line-height:83px}
+.header_inner .logo{float:left;}
+.header_inner .logo img{display:block;padding-top:24px}
+.header_inner .nav{margin-left:90px;float:left}
+.header_inner .nav li{float:left;padding-left:80px}
+.header_inner .user_login{float:right}
+.header_inner .user_login a{font-size:12px;}
+.header_inner .user_login .register {color:#93828b}
+.main{margin:0 auto;width:960px;text-align:center;padding-top:210px}
+.main .slogan_hxsd{font-size:0}
+.main  .btn{width:192px;height:46px;line-height:46px;border-radius:4px;border:1px solid #fff;display:inline-block;margin-top:80px}
+.main  .btn a{color:#fff;font-size:26px;display:block}
+.main p{font-size:16px;color:#93828b;padding:165px 0 96px 0}
+.main p span{color:#ffd323;font-family:Arial black}
+.footer{height:85px;background:rgba(0,0,0,0.15);padding-top:10px}
+.footer_inner{margin:0 auto;width:960px;text-align:center;color:#93828b;font-size:12px}
+.footer_inner p{line-height:25px}
+/*弹出登陆框*/
+.login_box{border-radius:4px;border:1px solid #fff;width:260px;height:460px;position:absolute;margin:auto;left:0;top:0;right:0;bottom:0;text-align:center;padding-top:30px;display:none}
+.login_words{font-size:20px;color:#fff;padding-top:20px}
+.login_words span{color:#9493a2}
+.login_box .tips{font-size:12px;color:#9493a2;padding:5px 0 25px 0;border-bottom:1px solid #fff}
+.login_box #login_delete{position:absolute;right:0;top:-2px;cursor:pointer;font-size:25px;color:#fff}
+.login_content {padding-top:65px}
+.login_content .phonenumber, .login_content .password{width:188px;height:33px;padding-left:40px;border:none;border-bottom:1px solid #fff;background:transparent}
+.login_content .password{margin-top:40px}
+.login_content img{position:absolute;left:0;top:0;z-index:20}
+.login_content .user_icon{left:22px;top:219px}
+.login_content .password_icon{left:26px;top:293px}
+.forget_password_help{padding-top:20px;font-size:14px}
+.forget_password_help input{width:16px;height:16px;vertical-align:middle}
+.forget_password_help a{margin-left:100px}
+.pop_login{width:223px;height:30px;line-height:30px;text-align:center;border:1px solid #fff;border-radius:4px;display:inline-block;margin-top:50px}
+.pop_login a{color:#fff;display:block}
+.have_no_account{font-size:14px;color:#fff;padding-top:8px}
+.have_no_account span{color:#ff5224}
+/*弹出注册框*/
+.register_box{border-radius:4px;border:1px solid #fff;width:260px;height:460px;position:absolute;margin:auto;left:0;top:0;right:0;bottom:0;text-align:center;padding-top:20px;display:none}
+.login_words{font-size:20px;color:#fff;padding-top:10px}
+.login_words span{color:#9493a2}
+.register_box .tips{font-size:12px;color:#9493a2;padding:5px 0 35px 0;border-bottom:1px solid #fff}
+.register_box #register_delete{position:absolute;right:0;top:-2px;cursor:pointer;font-size:25px;color:#fff}
+.register_box .slide_toggle{position:absolute;left:32px;top:124px}
+.register_box .slide_toggle li{float:left;}
+.register_box .slide_toggle .mobile_re:after{content:'';position:absolute;left:-32px;top:25px;width:130px;border:2px solid #ff5224}
+.register_box .slide_toggle .schoolNo_re{padding-left:66px}
+.register_box .slide_toggle li a{font-size:16px;color:#ff5224;}
+.register_content{padding-top:40px}
+.register_content .phonenumber, .register_content .password{width:188px;height:33px;padding-left:40px;border:none;border-bottom:1px solid #fff;background:transparent}
+.register_content .password{margin-top:30px}
+.register_content img{position:absolute;left:0;top:0;z-index:20}
+.register_content .user_icon{left:22px;top:193px}
+.register_content .password_icon{left:26px;top:256px}
+.register_content .password_icon2{top:323px;left:26px}
+.register_content .validate{width:208px;height:33px;padding-left:20px;padding-top:20px;border:none;border-bottom:1px solid #fff;background:transparent}
+.get_validate{width:108px;height:27px;line-height:27px;border:1px solid #fff;border-radius:4px;position:absolute;left:128px;top:372px}
+.get_validate a{font-size:14px;color:#fff}
+.pop_register{width:223px;height:30px;line-height:30px;text-align:center;border:1px solid #fff;border-radius:4px;display:inline-block;margin-top:10px}
+.pop_register a{color:#fff;display:block}
+.have_no_account{font-size:14px;color:#fff;padding-top:8px}
+.have_no_account span{color:#ff5224}
+/*模态层*/
+.modal{ width:100%; height:100%; position:fixed; left:0; top:0; display:none;}

@@ -1,0 +1,7 @@
+@charset "utf-8";
+/* CSS Document */
+@media screen and (max-width:1090px){
+	.main ul{margin:0 auto;width:800px}
+	.main ul .last{margin-right:50px}	
+}
+

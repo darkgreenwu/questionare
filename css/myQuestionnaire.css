@@ -1,0 +1,86 @@
+@charset "utf-8";
+/* CSS Document */
+/* reset */
+body,h1,h2,h3,h4,h5,h6,p,ul,ol,li,input,dl,dd,dt,form{margin:0;padding:0;}
+body{font-family:arial,'Microsoft YaHei';color:#666;}
+ul{list-style:none;}
+img{border:none;}
+a{text-decoration:none;}
+.clear{clear:both;}
+i{font-style:normal;font-family:consolas;}
+.clearfix:after{
+	content:'200B';
+	display:block;
+	height:0;
+	font-size:0;
+	clear:both;
+}
+/*为了出发低版本ie浏览器*/
+.clearfix{*zoom:1;}
+/* header */
+.header{width:100%;height:83px;background:rgba(0,0,0,0.6);text-align:center}
+.header .logo{float:left;padding:20px 0 0 10px;font-size:0}
+.header  .nav{display:inline-block;line-height:83px;}
+.header  .nav  li{float:left;position:relative;width:123px;text-align:center;}
+.header  .nav  li a{font-size:20px;color:#fff;display:block;}
+.header  .nav  li a:hover{background:#ff5224;}
+.header  .nav  li:hover .li_bg{position:absolute;left:-4px;top:83px;display:block}
+.myac{background:#ff5224;}
+.nav li:nth-child(1) img{position:absolute;left:-4px;top:83px;}
+.nav li:nth-child(2){margin:0 4px}
+.header .account_exit{float:right;color:#fff;padding-right:40px;font-size:14px;line-height:83px;}
+.header .account_exit a{color:#fff;font-size:14px;margin-left:25px;}
+.header .account_exit a:hover{text-shadow:0px 0px 5px rgba(255,255,255,0.5)}
+.header .nav li .li_bg{position:absolute;left:-4px;top:83px;display:none}
+.main{padding-top:116px;}
+.inner{margin:0 auto;width:1090px}
+.main ul{display:block}
+.main ul li{width:328px;;height:200px;float:left;margin-right:50px;border-radius:4px;margin-bottom:50px;overflow:hidden;position:relative}
+.main ul .last{margin-right:0}
+.main ul  .new{border:1px dashed #ddd;line-height:200px;font-size:26px;color:#989898;cursor:pointer}
+/* hover 效果 */
+.main ul  li:nth-child(1):hover{box-shadow:0 0 8px 3px rgba(0,0,0,.3);-moz-box-shadow:0 0 8px 3px rgba(0,0,0,.3);-webkit-box-shadow:0 0 8px 3px rgba(0,0,0,.3);-ms-box-shadow:0 0 8px 3px rgba(0,0,0,.3);
+
+transition: all 2s;-webkit-transition: all 2s;-moz-transition: all 2s;-ms-transition: all 2s}
+/* new */
+.main ul  .new span{position:relative;padding-left:138px;}
+.main ul  .new span i{display:inline-block;width:21px;height:21px;background:url(../images/research_icons.png) 0 -101px;position:absolute;left:109px;top:3px;}
+.main ul  .about_mobile_games{border:1px solid #ddd;position:relative}
+.main ul  .about_mobile_games h3{color:#515151;font-size:16px;font-weight:normal}
+.main ul  .about_mobile_games .title{padding-top:70px;padding-bottom:40px;width:279px;padding-left:50px}
+.main ul  .about_mobile_games .title span{font-size:14px;color:#515151;height:30px;line-height:30px;}
+.main ul  .about_mobile_games .title i{display:inline-block;width:29px;height:41px;position:absolute;left:13px;top:71px;background:url(../images/research_icons.png) 0 -142px}
+.main ul  .about_mobile_games .collect{height:39px;line-height:39px;font-size:14px;background:#f4f4f4;}
+ .about_mobile_games .collect .collecting{padding-left:40px;position:relative;color:#5596ce}
+ .collect .collecting i{width:14px;height:14px;position:absolute;left:19px;top:0;background:url(../images/research_icons.png) -1px -192px}
+ .about_mobile_games .collect .total{padding-left:78px}
+.stop_collecting{color:#d22929;padding-left:17px}
+/* mask */
+.mask{height:88px;background:rgba(0,0,0,0.4);border-radius:0 0 4px 4px;position:absolute;left:0;width:100%;}
+.mask div{float:left}
+.mask div p{font-size:14px;color:#e2e2e2;margin-left:23px;line-height:30px;cursor:pointer}
+.mask div i{width:31px;height:31px;display:block;margin-left:20px;margin-top:16px;}
+.offer_function div:hover p{color:#ff5224}
+.offer_function div:nth-child(1) i{background:url(../images/research_icons.png) 0 0;}
+.offer_function div:nth-child(1):hover i{background:url(../images/research_icons.png) 0 -46px;}
+.offer_function div:nth-child(2) i{background:url(../images/research_icons.png) -52px 0;}
+.offer_function div:nth-child(2):hover i{background:url(../images/research_icons.png) -52px -46px;}
+.offer_function div:nth-child(3) i{background:url(../images/research_icons.png) -104px 0;}
+.offer_function div:nth-child(3):hover i{background:url(../images/research_icons.png) -104px -46px;}
+.offer_function div:nth-child(4) i{background:url(../images/research_icons.png) -156px 0;}
+.offer_function div:nth-child(4):hover i{background:url(../images/research_icons.png) -156px -46px;}
+.offer_function div:nth-child(5) i{background:url(../images/research_icons.png) -208px 0;}
+.offer_function div:nth-child(5):hover i{background:url(../images/research_icons.png) -208px -46px;}
+.offer_function div:nth-child(6) i{background:url(../images/research_icons.png) -262px 0;}
+.offer_function div:nth-child(6):hover i{background:url(../images/research_icons.png) -262px -46px;}
+.footer{text-align:center;padding-top:360px;padding-bottom:200px}
+/*模态层*/
+.modal{ width:100%; height:100%; position:fixed; left:0; top:0; background:rgba(0,0,0,0.5);display:none}
+/*弹窗*/
+.myquestion_popup{width:404px;height:153px;display:none;position:absolute;left:0;right:0;top:0;bottom:0;margin:auto;z-index:10}
+.myquestion_popup .text{height:112px;line-height:112px;background-color:#fff;text-align:center;font-size:16px;color:#7b7b7b}
+.myquestion_popup .choice{line-height:41px;height:41px}
+.myquestion_popup .choice a{text-align:center;display:inline-block;font-size:16px}
+.myquestion_popup .choice a:hover{color:#fff;background-color:#ff5224;}
+.myquestion_popup .choice .cancel{width:202px;background-color:#cfcfcf;color:#5e5e5e;}
+.myquestion_popup .choice .confirm{width:202px;background-color:#ff6c24;color:#fff}
